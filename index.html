@@ -1,447 +1,219 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-nav {
-  background-color: #f3f3f3;
-  width: 100%;
-  height: 148px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Clone</title>
+    <link rel="stylesheet" href="./landingpage.css">
+</head>
 
-.navBar {
-  display: flex;
-  flex-wrap: wrap;
-}
+<body>
+    <div class="overallWrapper">
+    <header>
+        
 
-.cartLogin {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.loginCart {
-  display: flex;
-  justify-content: space-between;
-  width: 124px;
-  margin-left: 330px;
-}
 
-ol,
-li {
-  text-decoration: none;
-  list-style-type: none;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-weight: bold;
-  font-size: 22px;
-  color: black;
-  margin: 0;
-  padding: 0;
-  width: 79px;
-}
+        <div class="navBar">
+            <nav>
 
-.menu {
-  flex-direction: column;
-  padding-left: 50px;
-}
+                <div class="menu">
+                    <div class="rectangle1"></div>
+                    <div class="rectangle2"></div>
+                    <div class="rectangle3"></div>
+                </div>
+                <ol>
+                    <div class="cartLogin">
+                        <li class="logo"> ALPINE</li>
+                        <div>
+                            <div class="loginCart">
+                                <li><a class="cartLink" href="addtocart.com">Cart </a></li>
+                                <li><img class="cartIcon" src="./assets/cart-shopping-solid.svg" width="24px"
+                                        height="22px"></li>
+                                <li><button class="button1">Login</button></li>
+                            </div>
+                </ol>
+            </nav>
+        </div>
 
-.rectangle1 {
-  width: 29px;
-  height: 4px;
-  background-color: black;
-  margin-bottom: 3px;
-}
+        <div class="heroSegment">
+            <div class="textProduct">
+                <div class="text">
+                    <h1 class="kasia"><strong> Kasia Aviator</strong></h1>
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed.
+                        <br> 
+                    <p class="price">Price eleifend: <s> $4,420.00 MXN</s>
+                        <br>
+                        Price vulputate: $3,770.00 MXN
+                    </p>
+                    <br>
+                    <button class="cartButton">Add to cart</button>
 
-.rectangle2 {
-  width: 25px;
-  height: 4px;
-  background-color: black;
-  margin-bottom: 3px;
-}
+                    <div class="dropdown"> <img class="dropdownIcon" src="./assets/ri_arrow-drop-down-line.svg"
+                            width="24px" height="24px">
+                        <p class="productDetails">Product details</p>
+                    </div>
 
-.rectangle3 {
-  width: 20px;
-  height: 4px;
-  background-color: black;
-  margin-bottom: 3px;
-}
 
-.button1 {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  margin-top: 0;
-  padding-top: 0;
-  width: 47px;
-}
+                </div>
 
-.button1:hover .button1:active {
-  background-color: red;
-  color: white;
-}
-.cartLink {
-  text-decoration: none;
-  color: #000000;
-  font-size: 16px;
-}
 
-.heroSegment {
-  height: 550px;
-  width: 100%;
-  background-color: #f3f3f3;
-  padding-left: 30px;
-}
-.textProduct {
-  display: flex;
-  width: 600px;
-}
 
-.kasia {
-  font-size: 28px;
-}
-.text {
-  width: 320px;
-  height: 152px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  padding-left: 30px;
-  flex-wrap: wrap;
-  font-size: 16px;
-}
 
-.paragraph {
-  width: 320px;
-  height: 50px;
-  margin: 20px 0 20px 0;
-}
 
-.price {
-  padding-top: 20px;
-  margin-top: 50px;
-}
 
-.glasses {
-  margin-left: 300px;
-  padding-right: 30px;
-  margin-right: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 487px;
-  height: 224px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
+                <div>
+                    <div class="glassWrapper">
+                    <img class="glasses" src="./assets/glasses.png">
+                    </div>
+                    <div class="image1">
+                        <img class="arrow1" src="./assets/_arrow-tag (1).svg" width="24px" height="24px" />
+                        <p class="image">image 1</p>
+                        <img class="arrow2" src="./assets/fe_arrow-up.svg" width="24px" height="24px" />
+                    </div>
 
-.image1 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  width: 146px;
-  height: 26px;
-  margin-left: 400px;
-  margin-top: 50px;
-  padding-top: 0;
-}
+                </div>
 
-.image1 .arrow1 {
-  top: 1px;
-  left: 0;
-}
 
-.image1 .image {
-  top: 3px;
-  left: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
 
-.image1 .arrow2 {
-  top: 1px;
-  left: 120px;
-}
 
-.cartButton {
-  border: 1px solid black;
-  width: 120px;
-  height: 46px;
-}
 
-button:hover,
-button:active {
-  background-color: #000000;
-  color: white;
-  cursor: pointer;
-}
 
-a:hover,
-a:active {
-  color: red;
-  cursor: pointer;
-}
+    </header>
 
-.heroSegment {
-  height: 550px;
-  background-color: #f3f3f3;
-  padding-left: 30px;
-}
+    <main>
+        <div class="mainHeading">
+            <p>Fashion</p>
+            <p>Travel</p>
+            <p>Lifestyle</p>
+        </div>
+        <section class="cards">
 
-.mainHeading {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: auto;
-  padding-top: 50px;
-  width: 250px;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <img class="productsInStock belt" src="./assets/belt.png">
+                    <h3 class="productsName">Black LV Belt</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
 
-.cards {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.card {
-  background-color: #f3f3f3;
-  width: 289px;
-  height: 500px;
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <img class="productsInStock perf" src="./assets/perfume.png">
+                    <h3 class="productsName">Black LV Perfume</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-.productsPrice,
-.cartButton {
-  margin: 10px 0;
-  text-align: center;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <img class="productsInStock" src="./assets/gloves.png">
+                    <h3 class="productsName">Black LV Gloves</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                    </div>
+                </div>
+            </div>
 
-.cartBtnWrapper {
-  text-align: center;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <img class="productsInStock" src="./assets/suit.png">
+                    <h3 class="productsName">Black LV Suit</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
 
-.productsName {
-  text-align: center;
-  margin: 20px;
-  font-size: 20px;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
 
-.cartBasket {
-  display: flex;
-  margin: auto;
-}
+                    <div class="stubbornTrouser">
+                        <img class="productsInStock trouser" src="./assets/trouser.png" width="252px" height="280px">
+                    </div>
+                    <h3 class="productsName">Black LV Trouser</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
 
-.dropdown {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 80px;
-  width: 146px;
-  margin-left: 100px;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
 
-.productDetails {
-  margin-left: 3px;
-  padding-left: 3px;
-  line-height: normal;
-  white-space: nowrap;
-}
+                    <div class="sturbbornShoe">
+                        <img class="productsInStock shoe" src="./assets/shoe.png" width="252px" height="280px">
+                    </div>
+                    <h3 class="productsName">Black LV Shoe</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
 
-.sturbbornTrouser {
-  width: 130px;
-  height: 194px;
-}
-.trouser {
-  object-fit: contain;
-  padding-bottom: 10px;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <div class="stubbornBoot">
+                        <img class="productsInStock boot" src="./assets/boot.png">
+                    </div>
+                    <h3 class="productsName">Black LV Boot</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
 
-.sturbbornShoe {
-  width: 200px;
-  height: 111px;
-  margin: 120px 0 50px 0;
-}
-.shoe {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <div class="sturbbornShade">
+                        <img class="productsInStock shade" src="./assets/shade.png">
+                    </div>
+                    <h3 class="productsName">Black LV Shade</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
 
-.stubbornBoot {
-  width: 136px;
-  height: 136px;
-  margin: 0 0 125px 50px;
-  padding-top: 30px;
-}
+            <div class="card">
+                <div>
+                    <img class="cartBasket" src="./assets/cart-shopping-solid.svg" width="24px" height="22px">
+                    <div class="sturbbonHat">
+                        <img class="productsInStock hat" src="./assets/hat.png">
+                    </div>
+                    <h3 class="productsName">Black LV Hat</h3>
+                    <div class="productsPrice">$3,770.00 MXN</div>
+                    <div class="cartBtnWrapper">
+                    <button class="cartButton">Add to cart</button>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
 
-.boot {
-  object-fit: contain;
-}
-
-.belt {
-  padding-bottom: 10px;
-}
-
-.sturbbornHat {
-  width: 178px;
-  height: 178px;
-}
-
-.hat {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  margin-top: 60px;
-}
-
-.sturbbornShade {
-  width: 221px;
-  height: 221px;
-  margin: 0 0 40px 50px;
-  padding-top: 30px;
-}
-
-.shade {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-}
-
-.perf {
-  margin-top: 50px;
-}
-@media only screen and (max-width: 480px) {
-  .overallWrapper {
-    width: 100%;
-  }
-  nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .heroContainer {
-    display: flex;
-    flex: column;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .glasses {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin-left: 200px;
-  }
-
-  .glassWrapper {
-    width: 150px;
-    height: auto;
-  }
-
-  .text {
-    width: 180px;
-    height: 140px;
-    text-align: start;
-
-    font-size: 14px;
-  }
-
-  .paragraph {
-    width: 140px;
-    height: 100px;
-  }
-
-  .menu {
-    flex-direction: column;
-    padding-left: 10px;
-    margin: 0;
-  }
-
-  .logo {
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-    margin: 0;
-    padding: 0;
-    width: 50px;
-  }
-
-  .textProduct {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f3f3f3;
-    width: 100%;
-  }
-
-  .image1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 146px;
-    height: 26px;
-    margin-left: 170px;
-    margin-top: 50px;
-    padding-top: 0;
-  }
-
-  .heroSegment {
-    height: 550px;
-    width: 100%;
-    background-color: #f3f3f3;
-    padding-left: 10px;
-  }
-
-  main {
-    font-size: 14px;
-  }
-
-  .loginCart {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    margin-left: 100px;
-  }
-
-  .kasia {
-    font-size: 20px;
-  }
-
-  .dropdown {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 80px;
-    width: 146px;
-    margin-left: 20px;
-  }
-}
+</html>
